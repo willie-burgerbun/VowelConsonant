@@ -13,15 +13,15 @@ public class Main {
         // input a letter between 'a' and 'z'.
         // If not an error message will be displayed.
         if (isAlphabet(letter)) {
-            //Call isVowel boolean function to determine if user                // input is a vowel. 
+            //Call isVowel boolean function to determine if user input is a vowel. 
             if (isVowel(letter)) {
-                // if user input is a letter and is a vowel,                        //display the letter and "is a vowel."
+                // if user input is a letter and is a vowel, display the letter and "is a vowel."
                 System.out.println(letter + " is a vowel.");
             } else {
-                // if user input is a letter and not a vowel                        // display the letter and "is a consonant."
+                // if user input is a letter and not a vowel display the letter and "is a consonant."
                 System.out.println(letter + " is a consonant.");
             }
-            // if user input is not a letter display " not a                    // letter."
+            // if user input is not a letter display " not a letter."
         } else {
             System.out.println(letter + " is not a letter.");
         }
