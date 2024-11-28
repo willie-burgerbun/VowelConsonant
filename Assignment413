@@ -29,15 +29,13 @@ public class Main {
     }
     // boolean function to determine if user input is within the        
     // alphabet. 
-    public static boolean isAlphabet(char letter) {
-        char lowerCaseLetter = Character.toLowerCase(letter);
-        return lowerCaseLetter >= 'a' && lowerCaseLetter <= 'z';
+   public static boolean isAlphabet(char letter) {
+            return (letter >= 'a' && letter <= 'z') || (letter >= 'A' && letter <= 'Z');    
     }
+
      // boolean function to determine if user input is a vowel.  
     public static boolean isVowel(char letter) {
-        char lowerCaseLetter = Character.toLowerCase(letter);
-        return lowerCaseLetter == 'a' || lowerCaseLetter == 'e' || 
-               lowerCaseLetter == 'i' || lowerCaseLetter == 'o' ||
-               lowerCaseLetter == 'u';
+        letter = Character.toLowerCase(letter);
+        return letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u'; 
     }
 }
