@@ -6,6 +6,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         //Prompt the user to enter a letter.
         System.out.print("Enter a letter: ");
+        String input = scanner.nextLine().trim();
+        if (input.length() != 1) {
+            System.out.println("Invalid input: Please enter a single character.");
+
         char letter = scanner.next().charAt(0);
 
         // Check if the user input is a letter in the alphabet. 
